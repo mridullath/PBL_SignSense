@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SignSense</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f6f9ff;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+position:sticky;
+top:0;
+background:#dbeaffcc;
+backdrop-filter:blur(15px);
+box-shadow:0 6px 20px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.right{
+display:flex;
+gap:15px;
+align-items:center;
+}
+
+.right a{
+text-decoration:none;
+font-weight:600;
+color:#222;
+padding:8px 16px;
+border-radius:50px;
+display:flex;
+align-items:center;
+transition:.4s ease;
+}
+
+.right a span{
+max-width:0;
+opacity:0;
+overflow:hidden;
+margin-left:0;
+transition:.4s ease;
+display:flex;
+align-items:center;
+}
+
+.right a:hover{
+box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.right a:hover span{
+max-width:40px;
+opacity:1;
+margin-left:10px;
+}
+
+/* CENTER SECTION */
+
+section{
+height:calc(100vh - 70px);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:25px;
+}
+
+section p{
+font-size:32px;
+text-align:center;
+}
+
+/* BUTTON */
+
+.btn{
+padding:14px 30px;
+border-radius:12px;
+background:#bcd7ff;
+cursor:pointer;
+transition:.3s;
+text-decoration:none;
+color:black;
+font-weight:600;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* FOOTER PLACEHOLDER */
+
+#footer{
+height:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div><strong>SignSense</strong></div>
+
+<div class="right">
+
+<a href="#">Home <span>🏠</span></a>
+
+<a href="#mission">
+Mission <span><img src="target (2).png"></span>
+</a>
+
+<a href="#footer">
+Contact <span><img src="phone-chat.png"></span>
+</a>
+
+<a href="t.html">
+Let's translate <span><img src="language (1).png"></span>
+</a>
+
+<a href="sll.html">
+Sign language Library <span><img src="library.png"></span>
+</a>
+
+</div>
+</header>
+
+<section>
+
+<p>The Library is under construction ⚙️ / getting corrected !!</p>
+
+<a href="index.html" class="btn">Go back to Home Page</a>
+
+</section>
+
+<div id="footer"></div>
+
+</body>
+</html>
